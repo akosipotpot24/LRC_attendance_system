@@ -232,8 +232,15 @@
     CLLRC: {
       FAC: ['Faculty'],
       NTP: ['Non-Teaching Personnel'],
-      BSCS: ['BSCS 1A', 'BSCS 1B', 'BSCS 2A', 'BSCS 3A', 'BSCS 4A'],
-      "AB-ENG": ['AB-ENG 1A', 'AB-ENG 1B', 'AB-ENG 2A', 'AB-ENG 3A', 'AB-ENG 4A'],
+        "AB-ENG": ['AB-ENG 1A', 'AB-ENG 1B', 'AB-ENG 2A', 'AB-ENG 3A', 'AB-ENG 4A'],
+        "ACT": ['ACT 1A', 'ACT 1B', 'ACT 2A', 'ACT 3A', 'ACT 4A'],
+        "BAEL": ['BAEL 1A', 'BAEL 1B', 'BAEL 2A', 'BAEL 3A', 'BAEL 4A'],
+        "BEE": ['BEE 1A', 'BEE 1B', 'BEE 2A', 'BEE 3A', 'BEE 4A'],
+        "BSCS": ['BSCS 1A', 'BSCS 1B', 'BSCS 2A', 'BSCS 3A', 'BSCS 4A'],
+        "BSHM": ['BSHM 1A', 'BSHM 1B', 'BSHM 2A', 'BSHM 3A', 'BSHM 4A'],
+        "BSE": ['BSE 1A', 'BSE 1B', 'BSE 2A', 'BSE 3A', 'BSE 4A'],
+        "BSTM": ['BSTM 1A', 'BSTM 1B', 'BSTM 2A', 'BSTM 3A', 'BSTM 4A'],
+        "CPE": ['CPE 1A', 'CPE 1B', 'CPE 2A', 'CPE 3A', 'CPE 4A']
     }
   };
 
