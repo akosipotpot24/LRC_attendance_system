@@ -4,6 +4,7 @@ use App\Models\Attendance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SectionController;
 use App\Http\Controllers\StudentController;
 
 /*
@@ -39,7 +40,7 @@ Route::get('/stats', function () {
 
 
 Route::get('/userreg', function () {
-    
+
     return view('registration/UserRegister');
 });
 
@@ -55,6 +56,14 @@ Route::get('/college', [StudentController::class, 'viewStudentsCL'])->middleware
 Route::get('/inactiveStudents', [StudentController::class, 'viewInactive'])->middleware('auth');
 //viewing students
 
+//sections
+Route::get('/section', function () {
+    return view('section/createSection');
+})->middleware('auth');
+
+Route::post('/createsection',[SectionController::class, 'createsection']);
+
+//endsection
 
 
 

@@ -16,14 +16,14 @@ class UserController extends Controller
             'password' => 'required|min:6|confirmed',
             'UserType' => 'required'
         ]);
-        
-    
+
+
        $values['password'] = bcrypt($req['password']);
 
        User::create($values);
 
        return redirect('/userreg')->with('success','Registration success');
-    
+
     }
 
     public function login(Request $req)
@@ -32,16 +32,16 @@ class UserController extends Controller
             'username' => 'required',
             'password' => 'required',
             'UserType' => 'required'
-        ]); 
-    
+        ]);
+
         if (auth()->attempt([
             'username' => $values['username'],
             'password' => $values['password'],
-            'UserType' => $values['UserType']    
+            'UserType' => $values['UserType']
             ])) {
-           
+
                 $req->session()->regenerate();
-    
+
             switch ($values['UserType']) {
                 case 'admin':
                     return redirect('/1')->with('success', 'Welcome'.' '. $values['username']);
@@ -60,7 +60,7 @@ class UserController extends Controller
 
         return redirect('/')->with('failure', 'Invalid username, password, or user type');
     }
-    
+
     public function logout(){
         auth()->logout();
         return redirect('/')->with('logout', 'You are Logged Out');
