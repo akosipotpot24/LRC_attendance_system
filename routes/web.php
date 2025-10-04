@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Section;
 use App\Models\Attendance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -58,7 +59,8 @@ Route::get('/inactiveStudents', [StudentController::class, 'viewInactive'])->mid
 
 //sections
 Route::get('/section', function () {
-    return view('section/createSection');
+    $sections = Section::all();
+    return view('section/createSection', compact('sections'));
 })->middleware('auth');
 
 Route::post('/createsection',[SectionController::class, 'createsection']);

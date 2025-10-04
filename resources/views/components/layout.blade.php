@@ -31,7 +31,7 @@
 <header class="header-bar mb-3" style="background-color:#0a095f;">
     <div class="container d-flex flex-column flex-md-row align-items-center p-3">
         <h4 class="my-0 mr-md-auto font-weight-normal">
-            <a href="/1" style="color: #ffd230; font-family: 'Montserrat', sans-serif;"><b>OLOPSC</b></a>
+            <a href="/1" style="color: #ffd230; font-family: 'Montserrat', sans-serif;"><b>OLOP$C</b></a>
         </h4>
 
         @auth
